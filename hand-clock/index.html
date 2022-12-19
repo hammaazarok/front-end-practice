@@ -74,6 +74,14 @@
     </div>
     <script>
       // Add your JavaScript code here
+      function getHourIn12HoursClock(h) {
+        if (h === 00) {
+          return 12;
+        } else if (h > 12) {
+          return h - 12;
+        }
+        return h;
+      }
     </script>
   </body>
 </html>
