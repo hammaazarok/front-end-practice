@@ -86,7 +86,7 @@
       function updateClock() {
         let hour = document.querySelector(".hour");
         let minute = document.querySelector(".minute");
-        // let second = document.querySelector(".second");
+        let second = document.querySelector(".second");
         // const d = new Date();
         let h = getHourIn12HoursClock(d.getHours());
         // let m = d.getMinutes();
@@ -96,10 +96,10 @@
           "--minute_degree",
           `rotate(${(m / 60) * 360}deg)`
         );
-        // second.style.setProperty(
-        //   "--second_degree",
-        //   `rotate(${(s / 60) * 360}deg)`
-        // );
+        second.style.setProperty(
+          "--second_degree",
+          `rotate(${(s / 60) * 360}deg)`
+        );
         console.log("updated");
       }
     </script>
